@@ -1,0 +1,76 @@
+<html xmlns:string="xalan://java.lang.String" xmlns:lxslt="http://xml.apache.org/xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Unit Test Results: All Tests</title>
+<link title="Style" type="text/css" rel="stylesheet" href="stylesheet.css">
+</head>
+<body onload="open('allclasses-frame.html','classListFrame')">
+<h1>Unit Test Results.</h1>
+<table width="100%">
+<tr>
+<td align="left"></td><td align="right">Designed for use with <a href="http://www.junit.org/">JUnit</a> and <a href="http://ant.apache.org/">Ant</a>.</td>
+</tr>
+</table>
+<hr size="1">
+<h2>All Tests</h2>
+<table width="95%" cellspacing="2" cellpadding="5" border="0" class="details">
+<tr valign="top">
+<th>Class</th><th>Name</th><th>Status</th><th width="80%">Type</th><th nowrap>Time(s)</th>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a href="suites/0_allSuites.html">allSuites</a></td><td><a name="testGet1"></a><a href="suites/0_allSuites.html#testGet1">testGet1</a></td><td>Success</td><td></td><td>14.181</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a href="suites/0_allSuites.html">allSuites</a></td><td><a name="testGet2"></a><a href="suites/0_allSuites.html#testGet2">testGet2</a></td><td>Success</td><td></td><td>8.669</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a href="suites/0_allSuites.html">allSuites</a></td><td><a name="testGet3"></a><a href="suites/0_allSuites.html#testGet3">testGet3</a></td><td>Success</td><td></td><td>4.404</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a href="suites/0_allSuites.html">allSuites</a></td><td><a name="testGet4"></a><a href="suites/0_allSuites.html#testGet4">testGet4</a></td><td>Success</td><td></td><td>0.738</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a href="suites/0_allSuites.html">allSuites</a></td><td><a name="testPut1"></a><a href="suites/0_allSuites.html#testPut1">testPut1</a></td><td>Success</td><td></td><td>49.306</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a href="suites/0_allSuites.html">allSuites</a></td><td><a name="testPut2"></a><a href="suites/0_allSuites.html#testPut2">testPut2</a></td><td>Success</td><td></td><td>3.693</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a href="suites/0_allSuites.html">allSuites</a></td><td><a name="testNoUAPost"></a><a href="suites/0_allSuites.html#testNoUAPost">testNoUAPost</a></td><td>Success</td><td></td><td>0.586</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a href="suites/0_allSuites.html">allSuites</a></td><td><a name="testNoUAGet"></a><a href="suites/0_allSuites.html#testNoUAGet">testNoUAGet</a></td><td>Success</td><td></td><td>0.581</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a href="suites/0_allSuites.html">allSuites</a></td><td><a name="testNoUAPut"></a><a href="suites/0_allSuites.html#testNoUAPut">testNoUAPut</a></td><td>Success</td><td></td><td>0.579</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a href="suites/0_allSuites.html">allSuites</a></td><td><a name="testNoUADelete"></a><a href="suites/0_allSuites.html#testNoUADelete">testNoUADelete</a></td><td>Success</td><td></td><td>0.577</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a href="suites/0_allSuites.html">allSuites</a></td><td><a name="testDeleteGet"></a><a href="suites/0_allSuites.html#testDeleteGet">testDeleteGet</a></td><td>Failure</td><td>
+While sending HTTP GET(http://jsonplaceholder.typicode.com/posts/1), we were expecting 404 response code and we got 200(OK)!
+While sending HTTP GET(http://jsonplaceholder.typicode.com/comments/1), we were expecting 404 response code and we got 200(OK)!
+While sending HTTP GET(http://jsonplaceholder.typicode.com/albums/1), we were expecting 404 response code and we got 200(OK)!
+While sending HTTP GET(http://jsonplaceholder.typicode.com/photos/1), we were expecting 404 response code and we got 200(OK)!
+While sending HTTP GET(http://jsonplaceholder.typicode.com/todos/1), we were expecting 404 response code and we got 200(OK)!
+While sending HTTP GET(http://jsonplaceholder.typicode.com/users/1), we were expecting 404 response code and we got 200(OK)!<br>
+<br>
+<code>junit.framework.AssertionFailedError: <br>While sending HTTP GET(http://jsonplaceholder.typicode.com/posts/1), we were expecting 404 response code and we got 200(OK)!<br>While sending HTTP GET(http://jsonplaceholder.typicode.com/comments/1), we were expecting 404 response code and we got 200(OK)!<br>While sending HTTP GET(http://jsonplaceholder.typicode.com/albums/1), we were expecting 404 response code and we got 200(OK)!<br>While sending HTTP GET(http://jsonplaceholder.typicode.com/photos/1), we were expecting 404 response code and we got 200(OK)!<br>While sending HTTP GET(http://jsonplaceholder.typicode.com/todos/1), we were expecting 404 response code and we got 200(OK)!<br>While sending HTTP GET(http://jsonplaceholder.typicode.com/users/1), we were expecting 404 response code and we got 200(OK)!<br>	at tests.rest.DeleteGet.testDeleteGet(Unknown Source)<br>
+</code></td><td>3.878</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a href="suites/0_allSuites.html">allSuites</a></td><td><a name="testPostGet"></a><a href="suites/0_allSuites.html#testPostGet">testPostGet</a></td><td>Failure</td><td>
+While sending HTTP GET(http://jsonplaceholder.typicode.com/posts/101), we were expecting 200 response code and we got 404(Not Found)!
+While sending HTTP GET(http://jsonplaceholder.typicode.com/comments/501), we were expecting 200 response code and we got 404(Not Found)!
+While sending HTTP GET(http://jsonplaceholder.typicode.com/albums/101), we were expecting 200 response code and we got 404(Not Found)!
+While sending HTTP GET(http://jsonplaceholder.typicode.com/photos/5001), we were expecting 200 response code and we got 404(Not Found)!
+While sending HTTP GET(http://jsonplaceholder.typicode.com/todos/201), we were expecting 200 response code and we got 404(Not Found)!
+While sending HTTP GET(http://jsonplaceholder.typicode.com/users/11), we were expecting 200 response code and we got 404(Not Found)!<br>
+<br>
+<code>junit.framework.AssertionFailedError: <br>While sending HTTP GET(http://jsonplaceholder.typicode.com/posts/101), we were expecting 200 response code and we got 404(Not Found)!<br>While sending HTTP GET(http://jsonplaceholder.typicode.com/comments/501), we were expecting 200 response code and we got 404(Not Found)!<br>While sending HTTP GET(http://jsonplaceholder.typicode.com/albums/101), we were expecting 200 response code and we got 404(Not Found)!<br>While sending HTTP GET(http://jsonplaceholder.typicode.com/photos/5001), we were expecting 200 response code and we got 404(Not Found)!<br>While sending HTTP GET(http://jsonplaceholder.typicode.com/todos/201), we were expecting 200 response code and we got 404(Not Found)!<br>While sending HTTP GET(http://jsonplaceholder.typicode.com/users/11), we were expecting 200 response code and we got 404(Not Found)!<br>	at tests.rest.PostGet.testPostGet(Unknown Source)<br>
+</code></td><td>3.460</td>
+</tr>
+</table>
+</body>
+</html>

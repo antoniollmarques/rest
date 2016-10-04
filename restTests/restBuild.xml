@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project basedir="." default="all" name="restTests">
+  <property name="junit.output.dir" value="junit" />
+  <property name="dist.dir" value="bin" />
+  <property name="resources.dir" value="resources" />
+  <path id="restTests.classpath">
+		<pathelement location="bin" />
+		<pathelement location="${resources.dir}" />
+		<pathelement location="${resources.dir}/junit-4.12.jar" />
+		<pathelement location="${resources.dir}/hamcrest-core-1.3.jar" />
+		<dirset dir="${resources.dir}" />
+		<pathelement path="${resources.dir}" />
+  </path>
+  <target name="all" depends="clean, compile,allSuites,junitreport">
+    <echo message="All tests were executed and a report was generated..." />
+  </target>
+  <target name="clean">
+    <delete includeemptydirs="true">
+      <fileset dir="${dist.dir}" includes="**/*" />
+    </delete>
+  </target>
+  <target name="compile" depends="clean">
+    <javac includeantruntime="false" srcdir="./src" destdir="./bin">
+      <classpath>
+		<pathelement location="${resources.dir}" />
+		<pathelement location="${resources.dir}/junit-4.12.jar" />
+		<pathelement location="${resources.dir}/hamcrest-core-1.3.jar" />
+      </classpath>
+    </javac>
+  </target>
+  <target name="allSuites" depends="compile">
+    <mkdir dir="${junit.output.dir}" />
+    <junit fork="yes" printsummary="withOutAndErr">
+      <formatter type="xml" />
+      <test name="suites.allSuites" todir="${junit.output.dir}" />
+      <classpath refid="restTests.classpath" />
+    </junit>
+  </target>
+  <target name="junitreport" depends="allSuites">
+    <junitreport todir="${junit.output.dir}">
+      <fileset dir="${junit.output.dir}">
+        <include name="TEST-*.xml" />
+      </fileset>
+      <report format="frames" todir="${junit.output.dir}" />
+    </junitreport>
+  </target>
+</project>

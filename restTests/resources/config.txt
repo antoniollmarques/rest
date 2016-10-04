@@ -1,0 +1,10 @@
+Environment Setup:
+
+1. Download and install latest JAVA JDK.
+2. Download and install Apache Ant.
+3. Add JAVA and Apache Ant bin folder to your Environment Variables PATH.
+
+How to Run:
+
+1. Download the framework to your machine.
+2. On the project root run 
